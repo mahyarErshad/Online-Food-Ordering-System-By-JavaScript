@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>مک دونالد</title>
+</head>
+<body>
+    <div id="modal" class="modal d-flex justify-content-center align-items-center">
+        <div class="modal-alert d-flex justify-content-center align-items-center column-flex">
+            <h1>سفارش شما با موفقیت ثبت شد.</h1>
+            <button id="modalOkBtn">باشه</button>
+        </div>
+    </div>
+    <div id="wrapper" class="wrapper d-flex justify-content-center align-items-center">
+        <main class="main">
+            <h1 class="w-100 justify-content-center align-items-center grow">رستوران مک دونالد شعبه تهران</h1>
+            <hr>
+            <div class="products d-flex space-around wrap">
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/hamburger.png">
+                    <div class="topics">
+                        <h2>همبرگر مخصوص</h2>
+                        <h3>۱۰۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="specialBurgerPlus">+</button>
+                            <span class="bg-primary counter" id="specialBurger">۰</span>
+                            <button class="btn-color no-border color-white" id="specialBurgerMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="specialBurgerTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/hamburger.png">
+                    <div class="topics">
+                        <h2>همبرگر معمولی</h2>
+                        <h3>۸۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="normalBurgerPlus">+</button>
+                            <span class="bg-primary counter" id="normalBurger">۰</span>
+                            <button class="btn-color no-border color-white" id="normalBurgerMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="normalBurgerTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/hamburger.png">
+                    <div class="topics">
+                        <h2>همبرگر مخصوص با قارچ و پنیر</h2>
+                        <h3>۲۰۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="scheeseBurgerPlus">+</button>
+                            <span class="bg-primary counter" id="scheeseBurger">۰</span>
+                            <button class="btn-color no-border color-white" id="scheeseBurgerMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="scheeseBurgerTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/hamburger.png">
+                    <div class="topics">
+                        <h2>همبرگر معمولی با قارچ و پنیر</h2>
+                        <h3>۱۰۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="cheeseBurgerPlus">+</button>
+                            <span class="bg-primary counter" id="cheeseBurger">۰</span>
+                            <button class="btn-color no-border color-white" id="cheeseBurgerMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="cheeseBurgerTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/french_fries.png">
+                    <div class="topics">
+                        <h2>سیب زمینی سرخ کرده ویژه</h2>
+                        <h3>۲۵۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="spotatoPlus">+</button>
+                            <span class="bg-primary counter" id="spotato">۰</span>
+                            <button class="btn-color no-border color-white" id="spotatoMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="spotatoTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/french_fries.png">
+                    <div class="topics">
+                        <h2>سیب زمینی سرخ کرده</h2>
+                        <h3>۱۰۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="potatoPlus">+</button>
+                            <span class="bg-primary counter" id="potato">۰</span>
+                            <button class="btn-color no-border color-white" id="potatoMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="potatoTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/soda.png">
+                    <div class="topics">
+                        <h2>نوشابه رژیمی</h2>
+                        <h3>۶۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="hsodaPlus">+</button>
+                            <span class="bg-primary counter" id="hsoda">۰</span>
+                            <button class="btn-color no-border color-white" id="hsodaMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="hsodaTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/soda.png">
+                    <div class="topics">
+                        <h2>نوشابه</h2>
+                        <h3>۵۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="sodaPlus">+</button>
+                            <span class="bg-primary counter" id="soda">۰</span>
+                            <button class="btn-color no-border color-white" id="sodaMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="sodaTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/salad.png">
+                    <div class="topics">
+                        <h2>سالاد سزار</h2>
+                        <h3>۲۵۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="cezarPlus">+</button>
+                            <span class="bg-primary counter" id="cezar">۰</span>
+                            <button class="btn-color no-border color-white" id="cezarMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="cezarTotal">۰ تومان</span>
+                    </div>
+                </div>
+                <div class="card d-flex space-around">
+                    <img src="./assets/img/salad.png">
+                    <div class="topics">
+                        <h2>سالاد فصل</h2>
+                        <h3>۸۰۰۰ تومان</h3>
+                        <div class="plus-minus">
+                            <button class="btn-color no-border color-white" id="saladPlus">+</button>
+                            <span class="bg-primary counter" id="salad">۰</span>
+                            <button class="btn-color no-border color-white" id="saladMinus">-</button>
+                        </div>
+                    </div>
+                    <div class="d-flex card-price">
+                        <span id="saladTotal">۰ تومان</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="output d-flex column-flex">
+            <div class="total-cost d-flex space-between">
+                <h2 class="output-text">تعداد کل سفارشات:</h2>
+                <h3 class="output-text" id="totalNumber">۰ عدد</h3>
+            </div>
+            <div class="total-cost d-flex space-between">
+                <h2 class="output-text">جمع کل سفارشات:</h2>
+                <h3 class="output-text" id="bill">۰ تومان</h3>
+            </div>
+            <div class="total-cost d-flex space-between">
+                <h2 class="output-text">حق سرویس و کارمزد:</h2>
+                <h3 class="output-text" id="serviceCost">۰ تومان</h3>
+            </div>
+            <div class="total-cost d-flex space-between">
+                <h2 class="output-text" id="discountTitle">تخفیف:</h2>
+                <h3 class="output-text" id="discount">۰ تومان</h3>
+            </div>
+            <div class="takhfif-box d-flex justify-content-center align-items-center">
+                <input type="text" class="takhfif-input" placeholder="کد تخفیف " id="dicountCode">
+                <button class="takhfif-button" id="discountBtn">✓</button>
+                <button class="undone-discount" id="undone-discount">حذف</button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h2 class="output-text black-text success-discount" id="successDiscount">کد تخفیف با موفقیت اعمال شد</h2>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h2 class="output-text black-text fail-discount" id="failDiscount">کد تخفیف وارد شده صحیح نمیباشد</h2>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h2 class="output-text black-text fail-discount" id="remove-discount">کد تخفیف با موفقیت حذف شد.</h2>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h2 class="output-text black-text fail-discount" id="emptyCard">سبد خرید شما خالی است.</h2>
+            </div>
+            <div class="final-cost d-flex space-between">
+                <h2 class="output-text black-text">مبلغ قابل پرداخت:</h2>
+                <h3 class="output-text black-text" id="finalCost">۰ تومان</h3>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="submit-btn" id="submitBtn">ثبت سفارش</button>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
+</html>

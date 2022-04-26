@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Vazir';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/Vazir-Regular-FD.woff);
+}
+:root{
+    --primary-font: Vazir;
+    --background-color: #DA281C;
+    --primary-color: #F0F8FE;
+    --white : #fff;
+    --btn-color: #9D1010;
+    --secondary-color: #FFC72D;
+    --text-color: #202D33;
+}
+.color-white{
+    color: var(--white);
+}
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.column-flex{
+    flex-direction: column;
+}
+
+.w-100{
+    width: 100%;
+}
+.grow{
+    flex-grow: 1;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.btn-color{
+    background-color: var(--btn-color);
+}
+.no-border{
+    border: none;
+}
+.font-400{
+    font-weight: 400;
+}
+.fs-1{
+    font-size: 1rem;
+}
+.display-none{
+    display: none;
+}
